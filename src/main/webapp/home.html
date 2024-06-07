@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Record Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Images/2022-03-11 (1).jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Add some transparency to see the background image */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .address {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .option {
+            width: 200px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #4caf50;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .option:hover {
+            transform: scale(1.05);
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        .copyright {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Presidency University</h1>
+        <div class="address">Itgalpur Rajanakunte, Yelahanka, Bengaluru, Karnataka 560064</div>
+        <h2>Welcome to Teacher Record Management System</h2>
+        <div class="options">
+            <div class="option">
+                <a href="insert.html"><b>Insert Teacher</b></a>
+            </div>
+            <div class="option">
+                <a href="deleteTeacher.html"><b>Delete Teacher</b></a>
+            </div>
+            <div class="option">
+                <a href="display.html"><b>Display Teacher</b></a>
+            </div>
+            <div class="option">
+                <a href="updateTeacher.html"><b>Update Teacher</b></a>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2024 Presidency University. All rights reserved.</div>
+    </div>
+</body>
+</html>

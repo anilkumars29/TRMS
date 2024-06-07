@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Teacher Record</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label, input, select {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Update Teacher Record</h2>
+        <form action="UpdateTeacherServlet" method="post">
+            <label for="uniqueID">Enter Teacher's UniqueID:</label>
+            <input type="text" id="uniqueID" name="uniqueID" required>
+            
+            <label for="field">Select Field to Update:</label>
+            <select id="field" name="field" required>
+                <option value="name">Name</option>
+                <option value="qualification">Qualification</option>
+                <option value="dob">Date of Birth</option>
+                <option value="experience">Experience</option>
+                <option value="subjects">Subjects</option>
+                <option value="address">Address</option>
+                <option value="phone">Phone Number</option>
+                <option value="email">Email ID</option>
+            </select>
+            
+            <label for="newValue">Enter New Value:</label>
+            <input type="text" id="newValue" name="newValue" required>
+            
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</body>
+</html>
